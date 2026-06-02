@@ -1,13 +1,190 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nike</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Perfil Profissional | Landing Page</title>
+  <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+  <link rel="stylesheet" href="/linkedin-landing.css" />
+  <meta name="description" content="Landing page profissional para apresentar perfil do LinkedIn com resumo, experiência, formação e contatos." />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="hero-section" id="top">
+      <div class="hero-overlay"></div>
+      <nav class="top-nav">
+        <a class="brand" href="#top">Gabriel Melo</a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">Menu</button>
+        <ul class="nav-list" id="navList">
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#experience">Experiência</a></li>
+          <li><a href="#education">Formação</a></li>
+          <li><a href="#skills">Habilidades</a></li>
+          <li><a href="#contact">Contato</a></li>
+        </ul>
+      </nav>
+
+      <div class="hero-content container">
+        <div class="hero-copy">
+          <p class="eyebrow">Perfil Profissional</p>
+          <h1>Gabriel Melo</h1>
+          <p class="subtitle">Líder de Projetos Digitais | Estrategista de Experiência do Usuário | Especialista em Transformação Digital</p>
+          <p class="lead">Sou um profissional focado em construir experiências digitais elegantes e escaláveis, com resultados claros em performance, design colaborativo e inovação baseada em dados.</p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="https://www.linkedin.com/in/gabriel-melo-3810242b3" target="_blank" rel="noreferrer">Conecte-se no LinkedIn</a>
+            <a class="btn btn-secondary" href="#contact">Saiba mais</a>
+          </div>
+        </div>
+
+        <div class="hero-profile-card">
+          <div class="profile-image-wrap">
+            <img src="./temp/1.png" alt="Foto de perfil profissional" class="profile-image" onerror="this.onerror=null; this.src='https://via.placeholder.com/280';" />
+          </div>
+          <div class="profile-summary">
+            <p class="profile-title">Resumo</p>
+            <p>Profissional com ampla experiência em liderança de times multidisciplinares, desenvolvimento de produtos digitais e otimização de jornadas de clientes.</p>
+          </div>
+          <div class="profile-details">
+            <div>
+              <span>Localização</span>
+              <strong>São Paulo, Brasil</strong>
+            </div>
+            <div>
+              <span>Setor</span>
+              <strong>Tecnologia & Marketing</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section-overlap container" id="about">
+        <div class="section-header">
+          <span class="section-label">Sobre</span>
+          <h2>Perfil e Especializações</h2>
+        </div>
+        <div class="section-grid two-column">
+          <div>
+            <p>Tenho atuado em projetos estratégicos de transformação digital, com foco em criar produtos digitais que entregam valor para o usuário e retorno para o negócio. Minha experiência abrange liderança de equipes, gestão de roadmap e implementação de métricas de performance.</p>
+            <p>Busco sempre um design elegante, comunicação clara e execução ágil, transformando ideias em soluções de alto impacto.</p>
+          </div>
+          <div class="feature-list">
+            <div class="feature-item">
+              <strong>+10 anos</strong>
+              <span>de experiência em projetos digitais</span>
+            </div>
+            <div class="feature-item">
+              <strong>Gestão de equipes</strong>
+              <span>com foco em produto, design e tecnologia</span>
+            </div>
+            <div class="feature-item">
+              <strong>Alinhamento estratégico</strong>
+              <span>entre negócios, UX e tecnologia</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container" id="experience">
+        <div class="section-header">
+          <span class="section-label">Experiência</span>
+          <h2>Últimas posições</h2>
+        </div>
+
+        <div class="timeline-card">
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div>
+              <h3>Head de Produto Digital</h3>
+              <p class="timeline-meta">Agile Studio | 2023 — Presente</p>
+              <p>Coordenação de squads, definição de roadmap e implementação de soluções digitais orientadas a indicadores de engajamento e conversão.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div>
+              <h3>Gerente de UX e Design</h3>
+              <p class="timeline-meta">Inova Agency | 2020 — 2023</p>
+              <p>Desenvolvimento de experiências centradas no cliente para plataformas web e mobile, com foco em prototipagem rápida e testes de usabilidade.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div>
+              <h3>Consultor de Transformação Digital</h3>
+              <p class="timeline-meta">Tech Growth | 2018 — 2020</p>
+              <p>Assessoria estratégica para empresas em fase de crescimento, unindo tecnologia, processos e experiência de atendimento.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-overlap container" id="education">
+        <div class="section-header">
+          <span class="section-label">Formação</span>
+          <h2>Qualificação acadêmica</h2>
+        </div>
+        <div class="education-grid">
+          <article class="education-card">
+            <h3>Bacharelado em Administração</h3>
+            <p>Universidade de São Paulo (USP)</p>
+            <span>2014 — 2018</span>
+          </article>
+          <article class="education-card">
+            <h3>Certificação em UX Design</h3>
+            <p>Coursera | Google</p>
+            <span>2019</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="container" id="skills">
+        <div class="section-header">
+          <span class="section-label">Habilidades</span>
+          <h2>Competências principais</h2>
+        </div>
+        <div class="skill-grid">
+          <span class="skill-pill">Gestão de Produto</span>
+          <span class="skill-pill">Pesquisa de Usuário</span>
+          <span class="skill-pill">Design Thinking</span>
+          <span class="skill-pill">UX Strategy</span>
+          <span class="skill-pill">Análise de Dados</span>
+          <span class="skill-pill">Roadmap Ágil</span>
+          <span class="skill-pill">Design Systems</span>
+          <span class="skill-pill">Comunicação Corporativa</span>
+        </div>
+      </section>
+
+      <section class="contact-panel container" id="contact">
+        <div>
+          <span class="section-label">Contato</span>
+          <h2>Vamos conversar sobre o seu próximo projeto</h2>
+          <p>Pronto para fortalecer sua presença digital e transformar estratégias em entregas reais? Vamos conectar e explorar novas oportunidades.</p>
+        </div>
+        <div class="contact-actions">
+          <a class="btn btn-primary" href="https://www.linkedin.com/in/gabriel-melo-3810242b3" target="_blank" rel="noreferrer">Enviar mensagem no LinkedIn</a>
+          <a class="btn btn-secondary" href="mailto:gabriel.melo@email.com">Solicitar reunião</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <strong>Gabriel Melo</strong>
+          <p>Perfil profissional baseado em LinkedIn, pronto para personalizar com seus dados reais.</p>
+        </div>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/gabriel-melo-3810242b3" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="#">Instagram</a>
+          <a href="#">Twitter</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="/linkedin-landing.js"></script>
+</body>
 </html>
